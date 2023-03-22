@@ -16,17 +16,17 @@
 <div id="bottom-container">
     <div id="regenerate-button-container">
         <button id="regenerate-response-button">
-            Regenerate Response
+            生成回复
         </button>
     </div>
     <div id="model-select-container">
-        <label for="model-select">Select model:</label>
+        <label for="model-select">选择模型:</label>
         <select id="model-select">
-            <option value="chatgpt" selected>ChatGPT (Improved version of GPT-3 and can understand as well as generate natural language or code)</option>
-            <option value="gpt">GPT-3 (Understand and generate natural language )</option>
-            <option value="codex">Codex (Understand and generate code, including translating natural language to code)</option>
-            <option value="image">Create Image (Create AI image using DALL·E models)</option>
-            <option value="whisper">Whisper(AI speech recognition model)</option>
+            <option value="chatgpt" selected>ChatGPT(增强型的GPT-3，能够理解和生产自然语言以及代码)</option>
+            <option value="gpt">GPT-3(能够理解和生产自然语言)</option>
+            <option value="codex">Codex (能够理解和生产代码，包含能根据自然语言的描述的功能生成相应的代码)</option>
+            <option value="image">Create Image (根据描述用DALL·E模型生成图片)</option>
+            <option value="whisper">Whisper(根据语音生产文字)</option>
         </select>
     </div>
     <div id="input-container">
@@ -34,6 +34,8 @@
         <div id="prompt-input" contentEditable></div>
         <button id="submit-button"></button>
     </div>
+    <br/>
+    <br/>
 </div>
 <script src="./assets/js/highlight.min.js"></script>
 <script src="./assets/js/showdown.min.js"></script>
