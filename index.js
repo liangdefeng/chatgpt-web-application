@@ -83,7 +83,8 @@ app.post('/get-prompt-result', async (req, res) => {
                 model:"gpt-3.5-turbo",
                 messages: [
                     { role: "user", content: prompt }
-                ]
+                ],
+                temperature: 0.7
             })
             return res.send(result.data.choices[0]?.message?.content);
         }
