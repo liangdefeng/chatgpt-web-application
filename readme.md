@@ -51,27 +51,23 @@ node index.js
 ```sh
 git clone https://github.com/ioanmo226/chatgpt-web-application
 ```
-2. Install the dependencies:
-```sh
-npm install
-```
-3. Create a .env file in the root folder and add your OpenAI API key in the following format:
+2. Create a .env file in the root folder and add your OpenAI API key in the following format:
 ```sh
 OPENAI_API_KEY=your_api_key
 ```
-4. Create Docker Image
+3. Create Docker Image
 ```sh
 docker build -t chatgpt-web  .
 ```
 
-5. Start Docker
+4. Start Docker
 ```
 docker run -d \
   --name chatgpt-web  \
   -p 3001:3001 \
   chatgpt-web
 ```
-6. Now when you navigate to http://localhost:3001 you will see web response.
+5. Now when you navigate to http://localhost:3001 you will see web response.
 
 ## Usage
 - Type in the input field and press enter or click on the send button to make a request to the OpenAI API
